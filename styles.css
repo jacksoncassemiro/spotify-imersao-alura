@@ -1,0 +1,38 @@
+body {
+    background-color: #000;
+    font-family: "DM Sans", sans-serif;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 12px;
+    width: 300px;
+}
+
+.sidebar__navigation {
+    background-color: #121212;
+    border-radius: 8px;
+    padding: 16px 0 16px 16px;
+}
+
+.sidebar__navigation .sidebar__logo {
+    width: 80px;
+}
+
+.sidebar__navigation ul {
+    margin-top: 16px;
+}
+
+.sidebar__navigation ul li {
+    padding-top: 16px;
+}
+
+.sidebar__navigation ul li a {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
