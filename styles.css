@@ -12,10 +12,11 @@ body {
     width: 300px;
 }
 
-.sidebar__navigation {
+.sidebar__navigation, .sidebar__library {
     background-color: #121212;
     border-radius: 8px;
     padding: 16px 0 16px 16px;
+    margin-bottom: 10px;
 }
 
 .sidebar__navigation .sidebar__logo {
@@ -30,9 +31,29 @@ body {
     padding-top: 16px;
 }
 
-.sidebar__navigation ul li a {
+.sidebar__navigation ul li a, .sidebar__library .sidebar__library__content, .sidebar__library .sidebar__library__new {
     color: #b3b3b3;
     text-decoration: none;
     font-weight: 600;
     font-size: 14px;
+}
+
+.sidebar__navigation ul li a span + span, .sidebar__library .sidebar__library__content span + span {
+    margin-left: 10px;
+}
+
+.sidebar__library {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar__library .sidebar__library__new {
+    margin-right: 15px;
+    padding: 10px;
+}
+
+.sidebar__library .sidebar__library__new:hover {
+    background-color: #1f1f1f;
+    border-radius: 50px;
 }
