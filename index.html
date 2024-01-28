@@ -7,43 +7,75 @@
     <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css" integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/src/styles/styles.css">
 </head>
 <body>
-    <nav class="sidebar">
-        <div class="sidebar__navigation">
-            <a href="#">
-                <img class="sidebar__logo" src="/assets/icons/logo-spotify.png" alt="Logo do Spotify">
-            </a>
+    <div class="sidebar">
+        
+        <nav class="sidebar__navigation">
+            <div class="logo">
+                <a href="">
+                    <img src="src/assets/icons/logo-spotify.png" alt="Logo do Spotify">
+                </a>
+            </div>
             <ul>
                 <li>
-                    <a href="#">
+                    <a href="">
                         <span class="fa fa-home"></span>
                         <span>Início</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="">
                         <span class="fa fa-search"></span>
                         <span>Buscar</span>
                     </a>
                 </li>
             </ul>
-        </div>
-        <div class="sidebar__library">
-            <a class="sidebar__library__content" href="">
-                <span class="fa fa-book"></span>
-                <span>Sua biblioteca</span>
-            </a>
-            <a class="sidebar__library__new" href="">
+        </nav>
+
+        <div class="library">
+
+            <div class="library__content">
+                <button class="library__button">
+                    <span class="fa fas fa-book"></span>
+                    <span>Sua biblioteca</span>
+                </button>
                 <span class="fa fa-plus"></span>
-            </a>
+            </div>
+
+            <section class="section-playlist">
+                <div class="section-playlist__content">
+                    <span class="text title">Crie sua playlist</span>
+                    <span class="text subtitle">É fácil, vamos te ajudar</span>
+                    <button class="section-playlist__button">
+                        <span>Cria playlist</span>
+                    </button>
+                </div>
+            </section>
+
+            <div class="cookies">
+                <a href="">Cookies</a>
+            </div>
+
+            <div class="languages">
+                <button class="languages__button">
+                    <span class="fa fa-globe"></span>
+                    <span>Português do Brasil</span>
+                </button>
+            </div>
+
         </div>
-    </nav>
-    <main>
-    </main>
-    <footer>
+
+    </div>
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__mensagem">
+                <p>Testar o Premium de graça</p>
+                <p>Inscreva-se para curtir música ilimitada e podcasts só com alguns anúncios. Não precisa de cartão de crédito.</p>
+            </div>
+            <button class="footer__button">Inscreva-se grátis</button>
+        </div>
     </footer>
-    <script src=""></script>
 </body>
 </html>
