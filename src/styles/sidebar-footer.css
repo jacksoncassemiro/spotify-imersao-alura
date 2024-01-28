@@ -11,10 +11,10 @@ html {
 }
 
 body {
-    background-color: #000;
+    background-color: var(--background-color1);
     width: 100vw;
     height: 100vh;
-    font-family: "DM Sans", sans-serif;
+    font-family: var(--font-dm-sans), sans-serif;
 }
 
 .sidebar {
@@ -27,13 +27,13 @@ body {
 }
 
 .sidebar__navigation {
-    background-color: #121212;
+    background-color: var(--background-color2);
     border-radius: 8px;
-    padding: 16px 0 0 0;
+    padding-top: 16px;
 }
 
 .sidebar .logo {
-    background: #121212;
+    background: var(--background-color2);
     display: flex;
     border-radius: 8px;
     padding: 5px 0 0 20px;
@@ -53,7 +53,7 @@ body {
 }
 
 .sidebar nav ul li a {
-    color: #b3b3b3;
+    color: var(--font-color2);
     text-decoration: none;
     font-weight: 600;
     display: flex;
@@ -71,14 +71,14 @@ body {
 }
 
 .library {
-    background-color: #121212;
+    background-color: var(--background-color2);
     border-radius: 8px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     padding: 4px 8px;
-    color: #b3b3b3;
-    margin-top: 10px;
+    color: var(--font-color2);
+    margin-top: 14px;
 }
 
 .library .library__content {
@@ -88,7 +88,7 @@ body {
 
 .library .library__button {
     margin-right: 10px;
-    color: #b3b3b3;
+    color: var(--font-color2);
     background-color: transparent;
     border: 0;
     font-size: 18px;
@@ -119,10 +119,10 @@ body {
     align-items: flex-start;
     justify-content: space-between;
     gap: 20px;
-    background-color: #242424;
-    color: #b3b3b3;
+    background-color: var(--background-color3);
+    color: var(--font-color2);
     font-weight: 600;
-    font-size: 14px;
+    font-size: 15px;
     margin: 8px 0;
     padding: 16px;
     border-radius: 8px;
@@ -135,7 +135,7 @@ body {
 
 .section-playlist__content .text {
     padding-bottom: 14px;
-    color: #fff;
+    color: var(--font-color1);
 }
 
 .section-playlist__content .title {
@@ -149,8 +149,8 @@ body {
 }
 
 .section-playlist__content .section-playlist__button {
-    background-color: #fff;
-    color: #000;
+    background-color: var(--font-color1);
+    color: var(--background-color1);
     border-radius: 28px;
     font-size: 12px;
     display: flex;
@@ -170,7 +170,7 @@ body {
 
 .sidebar .cookies a {
     text-decoration: none;
-    color: #b3b3b3;
+    color: var(--font-color2);
     font-size: 15px;
     font-weight: 500;
 }
@@ -181,8 +181,8 @@ body {
 
 .languages .languages__button {
     background-color: transparent;
-    border: 1px solid #878787;
-    color: #fff;
+    border: 1px solid var(--background-color4);
+    color: var(--font-color1);
     cursor: pointer;
     align-items: center;
     font-weight: bold;
@@ -198,8 +198,8 @@ body {
     right: 0;
     margin: 12px;
     padding: 10px 25px;
-    background: linear-gradient(90deg, #eb04c4 0, #136add);
-    color:#fff;
+    background: linear-gradient(90deg, var(--linear-color1) 0, var(--linear-color2));
+    color: var(--font-color1);
 }
 
 .footer .footer__content {
@@ -222,7 +222,7 @@ body {
 
 .footer .footer__content .footer__button {
     border: 0;
-    background-color: #fff;
+    background-color: var(--font-color1);
     padding: 15px;
     border-radius: 30px;
     font-weight: 600;
