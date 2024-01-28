@@ -99,3 +99,23 @@
     margin-left: 15px;
     cursor: pointer;
 }
+
+.main-content {
+    background: linear-gradient(360deg, var(--background-color2) 40%, var(--background-color5));
+    margin: 13px 0 15px 0;
+    padding: 15px 18px;
+    border-radius: 8px;
+    height: calc(100% - 195px);
+    font-weight: 1000;
+    color: var(--font-color1);
+}
+
+.main-content .main-content__title {
+    margin-top: 25px;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.main-content .main-content__subtitle {
+    
+}
