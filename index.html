@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/src/styles/vars.css">
     <link rel="stylesheet" href="/src/styles/sidebar-footer.css">
     <link rel="stylesheet" href="/src/styles/main-content.css">
+    <link rel="stylesheet" href="/src/styles/media-query.css">
 </head>
 <body>
     <div class="sidebar">
@@ -84,7 +85,7 @@
 
                     <div class="header__search">
                         <img src="./src/assets/icons/search.png" alt="imagem de pesquisa">
-                        <input id="search-input" type="search" maxlength="100" placeholder="O que você deseja ouvir?">
+                        <input id="search-input" type="text" maxlength="100" placeholder="O que você deseja ouvir?">
                     </div>
 
                     <div class="header__login">
@@ -93,10 +94,116 @@
                     </div>
                 </div>
             </nav>
-            <div class="main-content">
+            <div class="main-content cards">
                 <h2 class="main-content__title">Boa tarde</h2>
                 <h3 class="main-content__subtitle">Navegar por todas as seções</h3>
+                <div class="main-content__cards">
+                    <a class="card-item">
+                        <div class="card-content">
+                            <span class="card-item__title">Boas festas</span>
+                            <img src="/src/assets/playlist/1.jpeg" alt="" class="card-item__image">
+                        </div>
+                    </a>
+                    <a class="card-item">
+                        <div class="card-content">
+                            <span class="card-item__title">Pop mix</span>
+                            <img src="/src/assets/playlist/2.png" alt="" class="card-item__image">
+                        </div>
+                    </a>
+                    <a class="card-item">
+                        <div class="card-content">
+                            <span class="card-item__title">New music</span>
+                            <img src="/src/assets/playlist/3.jpeg" alt="" class="card-item__image">
+                        </div>
+                    </a>
+                    <a class="card-item">
+                        <div class="card-content">
+                            <span class="card-item__title">Pod delas</span>
+                            <img src="/src/assets/playlist/4.jpeg" alt="" class="card-item__image">
+                        </div>
+                    </a>
+                    <a class="card-item">
+                        <div class="card-content">
+                            <span class="card-item__title">Best mode</span>
+                            <img src="/src/assets/playlist/5.jpeg" alt="" class="card-item__image">
+                        </div>
+                    </a>
+                    <a class="card-item">
+                        <div class="card-content">
+                            <span class="card-item__title">Science vs</span>
+                            <img src="/src/assets/playlist/6.jpeg" alt="" class="card-item__image">
+                        </div>
+                    </a>
+                    <a class="card-item">
+                        <div class="card-content">
+                            <span class="card-item__title">Esquenta sertanejo</span>
+                            <img src="/src/assets/playlist/7.jpeg" alt="" class="card-item__image">
+                        </div>
+                    </a>
+                    <a class="card-item">
+                        <div class="card-content">
+                            <span class="card-item__title">Pagodeira</span>
+                            <img src="/src/assets/playlist/8.jpeg" alt="" class="card-item__image">
+                        </div>
+                    </a>
+                    <a class="card-item">
+                        <div class="card-content">
+                            <span class="card-item__title">Funk hits</span>
+                            <img src="/src/assets/playlist/9.jpeg" alt="" class="card-item__image">
+                        </div>
+                    </a>
+                    <a class="card-item">
+                        <div class="card-content">
+                            <span class="card-item__title">Aquarela brasileira</span>
+                            <img src="/src/assets/playlist/10.jpeg" alt="" class="card-item__image">
+                        </div>
+                    </a>
+                    <a class="card-item">
+                        <div class="card-content">
+                            <span class="card-item__title">Rock this</span>
+                            <img src="/src/assets/playlist/11.jpeg" alt="" class="card-item__image">
+                        </div>
+                    </a>
+                    <a class="card-item">
+                        <div class="card-content">
+                            <span class="card-item__title">RapCaviar</span>
+                            <img src="/src/assets/playlist/12.jpeg" alt="" class="card-item__image">
+                        </div>
+                    </a>
+                    <a class="card-item">
+                        <div class="card-content">
+                            <span class="card-item__title">All New Indie</span>
+                            <img src="/src/assets/playlist/13.jpeg" alt="" class="card-item__image">
+                        </div>
+                    </a>
+                    <a class="card-item">
+                        <div class="card-content">
+                            <span class="card-item__title">Chill Vibes</span>
+                            <img src="/src/assets/playlist/14.jpeg" alt="" class="card-item__image">
+                        </div>
+                    </a>
+                    <a class="card-item">
+                        <div class="card-content">
+                            <span class="card-item__title">Viva Latino</span>
+                            <img src="/src/assets/playlist/15.jpeg" alt="" class="card-item__image">
+                        </div>
+                    </a>
+                </div>
             </div>
+
+            <div class="main-content result hidden">
+                <div class="main-content__cards">
+                    <div class="card-item result">
+                        <div class="card-content result">
+                            <img src="/src/assets/playlist/1.jpeg" alt="" class="card-item__image-result">
+                            <span class="card-item__title-result">Nome</span>
+                            <span class="card-item__subtitle-result">Artista</span>
+                            <a href="" class="card-item__play-result"><span class="fa fa-solid fa-play"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </main>
 
@@ -109,5 +216,6 @@
             <button class="footer__button">Inscreva-se grátis</button>
         </div>
     </footer>
+    <script src="/script.js"></script>
 </body>
 </html>

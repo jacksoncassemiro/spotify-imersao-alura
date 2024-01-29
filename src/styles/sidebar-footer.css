@@ -98,6 +98,7 @@ body {
     padding: 20px 0;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .library .library__button span:first-child {
@@ -112,6 +113,7 @@ body {
 
 .library .library__content .fa-plus {
     margin: 22px 20px 0 0;
+    cursor: pointer;
 }
 
 .section-playlist {
@@ -162,6 +164,7 @@ body {
     border: 0;
     width: 113px;
     margin-top: 12px;
+    cursor: pointer;
 }
 
 .sidebar .cookies {
@@ -228,4 +231,5 @@ body {
     font-weight: 600;
     font-size: 15px;
     width: 190px;
+    cursor: pointer;
 }

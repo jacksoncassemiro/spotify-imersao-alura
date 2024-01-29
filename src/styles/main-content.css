@@ -57,6 +57,7 @@
     border-radius: 500px;
     border: 1px solid transparent;
     width: 364px;
+    min-width: 240px;
     height: 48px;
     margin-left: 15px;
     margin-right: 15px;
@@ -110,12 +111,131 @@
     color: var(--font-color1);
 }
 
+.main-content__cards::-webkit-scrollbar {
+    width: 1px;
+}
+
+.main-content__cards::-webkit-scrollbar-thumb
+{
+    background-color: transparent;
+}
+
 .main-content .main-content__title {
     margin-top: 25px;
     margin-bottom: 20px;
     font-size: 30px;
 }
 
-.main-content .main-content__subtitle {
+.main-content .main-content__cards {
+    margin-top: 20px;
+    overflow: auto;
+    width: 100%;
+    max-height: 74%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.main-content__cards .card-item {
+    width: 220px;
+    height: 220px;
+    background-color: var(--background-color3);
+    border-radius: 8px;
+}
+
+.card-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 15px;
+}
+
+.main-content__cards .card-item__title {
+    font-size: 25px;
+}
+
+.main-content__cards .card-item__image{
+    position: absolute;
+    width: 120px;
+    transform: rotate(25deg);
+    right: 0;
+    bottom: 0;
+    object-fit: cover;
+    overflow: hidden;
+    transition: all ease-in-out 0.25s;
+}
+
+.main-content__cards .card-item:hover {
     
+    background-color: var(--background-color5);
+
+    .card-item__image{
+        width: 130px;
+        transform: rotate(15deg);
+    }
+
+}
+
+.hidden {
+    display: none;
+}
+
+.card-item__image-result {
+    position: relative;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 25px auto 0 auto;
+}
+
+.card-content.result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.card-item__title-result {
+    font-size: 22px;
+    margin: 10px 0 5px 0;
+}
+
+.card-item__subtitle-result {
+    font-size: 10px;
+    margin: 0 0 20px 0;
+    font-weight: normal;
+    color: var(--font-color2);
+}
+
+.card-item__play-result {
+    position: absolute;
+    right: 40px;
+    bottom: 60px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--font-color4);
+    padding: 20px;
+    transition: all ease-in-out 0.25s;
+}
+
+.card-item__play-result span{
+    color: var(--background-color1);
+}
+
+.card-item__play-result:hover{
+    padding: 25px;
+    display: inherit;
+
+    span{
+        color: var(--background-color2);
+    }
 }

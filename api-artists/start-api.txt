@@ -1,0 +1,19 @@
+json-server --watch api-artists/artists.json --port 4000
+
+
+
+//////////////////
+instalar versão mais recente do node
+
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+
+nvm install 18.3
+
+nvm use 18.3
+
+
+/////////////////////
+
+npm uninstall -g json-server
+
+npm install -g json-server@0.17.4
